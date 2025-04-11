@@ -1,0 +1,61 @@
+/*
+CSS 명명 규칙
+  BEM Block -Element -Modifier
+  Block : 재사용 가능한 컴포넌트
+  Element : Block 안에서만 의미를 가지는 Block의 구성요소
+  Modifier : Block, Element 의 속성(상태)
+
+명명 : Block__Element--Modifier
+
+합성어의 경우 -로 연결
+  ex) search-form
+  ex) search-form__inp--red
+  ex) search-form__inp--activate
+
+shorter BEM
+  합성어를 camelcase로 변경
+  ex) searchFrom_inp-red
+*/
+
+.btn{
+  border-style: outset;
+  border-radius: 20px;
+  border-width: 0.2rem;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.btn-l{
+  width: 12rem;
+  height: 4rem;
+  font-size: 1rem;
+}
+
+.btn-m{
+  width: 6em;
+  height: 2rem;
+  font-size: 1rem;
+}
+
+.btn-s{
+  width: 4rem;
+  height: 2rem;
+  font-size: 1rem;
+}
+
+.btn-red{
+  background-color: lightcoral;
+}
+
+.btn-blue{
+  background-color: lightblue;
+}
+
+.btn-green{
+  background-color: lightgreen;
+}
+
+.btn:hover{
+  border-style: inset;
+  color: blue;
+}
